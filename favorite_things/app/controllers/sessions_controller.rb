@@ -1,4 +1,4 @@
-class SessionsControllerController < ApplicationController
+class SessionsController < ApplicationController
 
   def create
     if valid_login?
@@ -15,3 +15,4 @@ class SessionsControllerController < ApplicationController
   end
 
 end
+
