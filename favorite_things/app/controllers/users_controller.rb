@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
 
   def home
-    if current_user = nil
-      redirect_to login_path
+    if current_user == nil
+      redirect_to login_signup_path
     else
-      redirect_to user_show_path
+      redirect_to users_path
+    end
   end
 
 end
